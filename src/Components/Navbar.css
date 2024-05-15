@@ -1,0 +1,21 @@
+.navbar {
+    background: rgba(255, 255, 255, 0.191); 
+    height: 90px; 
+}
+
+.navbar-brand {
+    height: 100%; 
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    transition: color 0.3s;
+    padding: 25px 15px;
+    line-height: 30px; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: red; 
+}

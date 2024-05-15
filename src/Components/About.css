@@ -1,0 +1,49 @@
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    width: 45%;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+.image:hover {
+    transform: scale(1.05); /* Scale up by 5% on hover */
+}
+
+.text {
+    width: 45%;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+    }
+    
+    .image-container,
+    .text {
+        width: 100%;
+    }
+}
